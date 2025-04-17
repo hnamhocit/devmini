@@ -121,7 +121,7 @@ const Hero = () => {
 				backgroundImage:
 					'url(https://w0.peakpx.com/wallpaper/832/271/HD-wallpaper-blue-stars-gradient-space-star.jpg)',
 			}}>
-			<div className='flex flex-col text-center justify-center gap-4 items-center z-10 p-4 bg-[rgba(0,0,0,.3)] rounded-2xl max-w-xs'>
+			<div className='flex flex-col text-center justify-center gap-4 items-center z-10 p-4 rounded-2xl max-w-xs'>
 				<h1 className='text-4xl md:text-5xl font-black primary-text text-center tracking-widest text-shadow-sm text-shadow-pink-500/10'>
 					DEV MINI
 				</h1>

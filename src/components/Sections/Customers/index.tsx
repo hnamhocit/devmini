@@ -28,7 +28,7 @@ const Customers = () => {
 			</Marquee>
 
 			<Marquee direction='right'>
-				{customers.slice(4, 7).map((c) => (
+				{customers.slice(4, 8).map((c) => (
 					<img
 						key={c}
 						src={`/customers${c}`}

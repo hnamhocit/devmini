@@ -13,7 +13,7 @@ import {
 
 const Header = () => {
 	return (
-		<div className='sticky top-0 left-0 w-full h-16 bg-gray-950 px-4 flex items-center text-white justify-between'>
+		<div className='sticky top-0 left-0 w-full h-16 bg-gray-950 px-4 flex items-center text-white z-[9999] justify-between'>
 			<Brand />
 
 			<div className='flex items-center gap-3'>
