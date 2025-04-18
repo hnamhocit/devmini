@@ -1,6 +1,5 @@
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
-
 import Section from '../Section'
+import WeDo from './WeDo'
 
 const data = [
 	{
@@ -40,23 +39,10 @@ const WhatWeDo = () => {
 
 			<div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
 				{data.map((skill) => (
-					<Card
-						className='text-white bg-gray-950 border-gray-700'
-						key={skill.title}>
-						<CardHeader>
-							<img
-								src={skill.photoURL}
-								alt={skill.title}
-								className='rounded-md'
-							/>
-						</CardHeader>
-						<CardContent>
-							<div className='text-xl font-semibold secondary-text text-center mb-4'>
-								{skill.title}
-							</div>
-							<div>{skill.description}</div>
-						</CardContent>
-					</Card>
+					<WeDo
+						key={skill.title}
+						{...skill}
+					/>
 				))}
 
 				<div>

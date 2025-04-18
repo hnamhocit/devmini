@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'motion/react'
 import { FaArrowRight, FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
 import { styled } from 'styled-components'
 
@@ -122,18 +123,30 @@ const Hero = () => {
 					'url(https://w0.peakpx.com/wallpaper/832/271/HD-wallpaper-blue-stars-gradient-space-star.jpg)',
 			}}>
 			<div className='flex flex-col text-center justify-center gap-4 items-center z-10 p-4 rounded-2xl max-w-xs'>
-				<h1 className='text-4xl md:text-5xl font-black primary-text text-center tracking-widest text-shadow-sm text-shadow-pink-500/10'>
+				<motion.div
+					initial={{ opacity: 0, translateY: -24 }}
+					whileInView={{ opacity: 1, translateY: 0 }}
+					className='text-4xl md:text-5xl font-black primary-text text-center tracking-widest text-shadow-sm text-shadow-pink-500/10'>
 					DEV MINI
-				</h1>
+				</motion.div>
 
-				<div className='text-lg font-bold text-white italic flex gap-1'>
+				<motion.div
+					transition={{ delay: 0.1 }}
+					initial={{ opacity: 0, translateY: -24 }}
+					whileInView={{ opacity: 1, translateY: 0 }}
+					className='text-lg font-bold text-white italic flex gap-1'>
 					<FaQuoteLeft /> Building Worlds, Creating Legends{' '}
 					<FaQuoteRight />
-				</div>
+				</motion.div>
 
-				<Button className='bg-linear-65 from-purple-500 to-pink-500 shadow-md shadow-pink-500/50'>
-					Start explore <FaArrowRight />
-				</Button>
+				<motion.div
+					transition={{ delay: 0.2 }}
+					initial={{ opacity: 0, translateY: -24 }}
+					whileInView={{ opacity: 1, translateY: 0 }}>
+					<Button className='bg-linear-65 from-purple-500 to-pink-500 shadow-md shadow-pink-500/50'>
+						Start explore <FaArrowRight />
+					</Button>
+				</motion.div>
 			</div>
 
 			<span></span>
